@@ -1,0 +1,120 @@
+/*================
+    colors
+==================>*/    
+
+
+:root{
+    --bodeBg: white;
+    --bodefont: black;
+    --blue: #9fc5ef;
+    --blue-button: #1976d2;
+    --icons: #40464d;
+    --footer-bg:#212529;
+}
+
+body{
+    background-color: var(--bodeBg);
+    color: var(--bodefont);
+
+}
+
+
+
+/* ===================>
+      My class
+  ================>*/
+
+.border{
+border: 4px solid red;
+
+}
+.flex{
+  display:flex;
+  align-items: center;
+}
+/*=================>
+  Genarl style
+ ===================>*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+html{
+    font-family: system-ui, -apple-system ,'Roboto', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth
+}
+
+ 
+*,
+ *:before, 
+ *:after {
+    box-sizing: inherit;
+}  
+
+
+::-webkit-scrollbar {
+    width: 0.88rem;
+   }
+   
+  ::-webkit-scrollbar-track {
+    border: 7px solid #292c3b;
+    box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    background-color: #d4d4d8;
+    }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 2px;
+  }
+   
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  main{
+    width: 80%;
+    margin-inline:auto;
+  }
+  
+  @media (width<600px){
+      main{
+        width: 100%;
+      }
+  }
+  
+  /* for Firefox */
+   html {scrollbar-color: #9e4673 #3d4a59;} 
+
+
+   /*================>
+    Html Elmenets
+   ===================>*/
+   a, button{
+     all: unset;
+     display: inline-block;
+     transition: 0.2s;
+   }
+
+   button:active, a:active{
+    scale: 0.9;
+   }
+   button:hover, a:hover{
+    scale: 0.9;
+   }
+
+li{
+    margin-left: 2rem;
+    list-style: none;
+}
+
+/*==============================
+   General style this project
+================================>*/
+.fa-solid{
+   color: var(--icons);
+}
